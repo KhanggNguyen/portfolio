@@ -56,7 +56,7 @@ export const Contact = () => {
                         marginHeight={0}
                         marginWidth={0}
                         style={{ filter: "opacity(0.7)" }}
-                        src="https://www.google.com/maps/embed/v1/place?q=Toulouse&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                        src={`https://www.google.com/maps/embed/v1/place?q=Toulouse&key=${process.env.REACT_APP_GOOGLEMAP_API}`}
                     />
                     <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
                         <div className="lg:w-2/5 px-6">

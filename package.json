@@ -10,7 +10,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.25.1",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "2.1.8",
     "react-scroll": "^1.8.4"
   },
   "scripts": {
@@ -29,5 +29,11 @@
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.36",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
