@@ -10,22 +10,12 @@ export const Contact = () => {
         formState: { errors },
     } = useForm();
 
-    const [name, setName] = useState("");
-    const [phone, setPhone] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
-
     function onSubmit(data) {
         const { name, email, phone, message } = data;
 
-        setName(name);
-        setEmail(email);
-        setPhone(phone);
-        setMessage(message);
-
         try {
             const templateParams = {
-                name,
+                from_name: name,
                 email,
                 phone,
                 message,
@@ -36,8 +26,12 @@ export const Contact = () => {
                 process.env.REACT_APP_TEMPLATE_ID,
                 templateParams,
                 process.env.REACT_APP_USER_ID
-            );
-            reset();
+            ).then(function(response){
+                console.log('Mail sent successfully.', response);
+                reset();
+            },function(error){
+                console.log(`Error while sending mail : `, error);
+            });
         } catch (e) {
             console.log(e);
         }
@@ -132,7 +126,7 @@ export const Contact = () => {
                             {...register("phone", {
                                 required: false,
                                 pattern:
-                                /^(?:(?:\+|00)33[\s.-]{0,3}(?:\(0\)[\s.-]{0,3})?|0)[1-9](?:(?:[\s.-]?\d{2}){4}|\d{2}(?:[\s.-]?\d{3}){2})$/,
+                                    /^(?:(?:\+|00)33[\s.-]{0,3}(?:\(0\)[\s.-]{0,3})?|0)[1-9](?:(?:[\s.-]?\d{2}){4}|\d{2}(?:[\s.-]?\d{3}){2})$/,
                             })}
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
