@@ -39,6 +39,14 @@ export const projects = [
     image: "./Laposte1.png",
     link: "#",
   },
+  {
+    title: "Personnal Ecommerce Project",
+    subtitle: "MERN Stack - Mongodb, Express, Reactjs, Nodejs",
+    description:
+      "This project is about a simple ecommerce site and a dashboard providing all basic ecommerce's features.",
+    image: "#",
+    link: "https://ecommerce-34.netlify.app/",
+  },
 ];
 
 export const skills = [
@@ -53,6 +61,5 @@ export const skills = [
   "React",
   "Angular",
   "Node",
-  "Java",
   "Redis"
 ];
