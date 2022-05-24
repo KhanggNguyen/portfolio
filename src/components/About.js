@@ -1,7 +1,8 @@
-import React, {useRef} from "react";
-import {Link} from "react-scroll"
-export const About = () => {
+import React, { useRef } from "react";
+import { Link } from "react-scroll";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
+export const About = () => {
     return (
         <section id="about">
             <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center min-h-screen">
@@ -11,17 +12,28 @@ export const About = () => {
                         <br className="hidden lg:inline-block" />
                         I'm an IT developper
                     </h1>
-                    <p className="mb-8 leading-relaxed">
-                    </p>
+                    <div className="mb-8 flex space-x-4">
+                        <a
+                            href="https://www.linkedin.com/in/huu-khang-nguyen-216355161/"
+                            target="_blank"
+                        >
+                            <FaLinkedin />
+                        </a>
+                        <a
+                            href="https://github.com/KhanggNguyen"
+                            target="_blank"
+                        >
+                            <FaGithub />
+                        </a>
+                    </div>
                     <div className="flex justify-center">
                         <Link
-                                activeClass="active"
-                                to="contact"
-                                spy={true}
-                                smooth={true}
-                                className={`cursor-pointer inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg`}
+                            activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            className={`cursor-pointer inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg`}
                         >
-                        
                             Work With Me
                         </Link>
                         <Link

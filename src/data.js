@@ -52,14 +52,18 @@ export const projects = [
 export const skills = [
   "PHP",
   "Symfony",
+  "ZEND",
+  "Codeigniter",
+  "Node",
   "MySQL",
   "MongoDB",
-  "Codeigniter",
   "HTML/CSS",
-  "JavaScript",
+  "Javascript",
+  "Typescript",
   "Jquery",
   "React",
   "Angular",
-  "Node",
-  "Redis"
+  "Redis",
+  "Github/Gitlab/Bitbucket",
+  "SAFe"
 ];
