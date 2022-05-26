@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 
@@ -77,7 +77,7 @@ export const Contact = () => {
                     onSubmit={handleSubmit(onSubmit)}
                     noValidate
                 >
-                    <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
+                    <h2 className="sm:text-4xl text-3xl mb-1 font-medium title-font dark:text-white ">
                         Contact me
                     </h2>
                     <p className="leading-relaxed mb-5">

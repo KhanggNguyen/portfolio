@@ -4,11 +4,19 @@ import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
+import { useEffect } from "react";
+import useDarkMode from "./hook/useDarkMode";
+
 
 export default function App() {
+    const [colorTheme, setTheme] = useDarkMode();
+
+    useEffect(() => {
+        setTheme('dark');
+    }, []);
 
     return (
-        <main className="text-gray-400 bg-gray-900 body-font">
+        <main className="text-gray-400 bg-white-900 dark:bg-gray-900 body-font">
             <Navbar/>
             <About/>
             <Projects/>

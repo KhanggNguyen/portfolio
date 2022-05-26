@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import { Link } from "react-scroll";
+import Toggle from "./Toggle";
 
 export const Navbar = () => {
     const [active, setActive] = useState("");
@@ -29,7 +30,7 @@ export const Navbar = () => {
                         className="cursor-pointer ml-3 text-xl"
                     >
                         Nguyen Huu Khang
-                    </Link>
+                    </Link> 
                 </a>
                 <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
                     <Link
@@ -65,6 +66,9 @@ export const Navbar = () => {
                         Skills
                     </Link>
                 </nav>
+
+                <Toggle />
+
                 <Link
                     activeClass="active"
                     to="contact"
@@ -76,6 +80,7 @@ export const Navbar = () => {
                     Hire Me
                     <ArrowRightIcon className="w-4 h-4 ml-1" />
                 </Link>
+                
             </div>
         </header>
     );
