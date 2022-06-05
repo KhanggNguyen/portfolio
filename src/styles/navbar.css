@@ -1,0 +1,35 @@
+.gradient-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111027;
+    box-shadow: inset 10px 10px 20px #070A10, inset -10px -10px 20px #1b263e;
+    height: 5rem;
+    width: 5rem;
+    position: relative;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.gradient-border::after{
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    background: linear-gradient(35deg, deepskyblue, deeppink, lawngreen);
+    border-radius: 100px;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+.gradient-border:hover::after{
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}

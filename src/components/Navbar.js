@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { ArrowRightIcon } from "@heroicons/react/solid";
 import { Link } from "react-scroll";
 import Toggle from "./Toggle";
+import '../styles/navbar.css';
 
 export const Navbar = () => {
     const [active, setActive] = useState("");
@@ -74,11 +74,10 @@ export const Navbar = () => {
                     to="contact"
                     spy={true}
                     smooth={true}
-                    className={`cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0 ${active === "contact" ? "text-white" : ""}`}
+                    className={`gradient-border  ${active === "contact" ? "text-white" : ""}`}
                     onSetActive={handleSetActive}
                 >
                     Hire Me
-                    <ArrowRightIcon className="w-4 h-4 ml-1" />
                 </Link>
                 
             </div>
