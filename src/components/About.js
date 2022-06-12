@@ -1,18 +1,21 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import '../styles/about.css';
 
 export const About = () => {
     return (
         <section id="about">
             <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center min-h-screen">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium dark:text-white">
-                        Hello, my name is Khang
-                        <br className="hidden lg:inline-block" />
-                        I'm an IT developper
+                <div className="lg:w-1/2 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <span className="text-2xl text-green-400">
+                        Hi there,
+                    </span>
+                    <h1 className="title title-font sm:text-4xl text-3xl mb-4 font-medium dark:text-white">
+                        I am a Fullstack Developer
                     </h1>
-                    <div className="mb-8 flex space-x-4">
+                    <span className="mb-4 dark:text-gray-500">I'm currently working as a Fullstack Developer. I have experiences working with differents frameworks and languages.</span>
+                    <div className="mb-8 flex space-x-4 dark:text-gray-100">
                         <a
                             href="https://www.linkedin.com/in/huu-khang-nguyen-216355161/"
                             target="_blank"

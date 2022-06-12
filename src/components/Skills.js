@@ -9,7 +9,7 @@ export const Skills = () => {
         <section id="skills">
             <div className="container px-5 py-10 mx-auto  min-h-screen">
                 <div className="text-center mb-20">
-                    <ChipIcon className="w-10 inline-block mb-4" />
+                    <ChipIcon className="w-10 inline-block mb-4 dark:text-white" />
                     <h1 className="sm:text-4xl text-3xl font-medium title-font dark:text-white mb-4">
                         Skills &amp; Technologies
                     </h1>

@@ -57,7 +57,7 @@ export const Contact = () => {
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                 ADDRESS
                             </h2>
-                            <p className="mt-1">Toulouse, France</p>
+                            <p className="mt-1 text-white">Toulouse, France</p>
                         </div>
                         <div className="lg:w-3/5 px-6 mt-4 lg:mt-0">
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
@@ -80,7 +80,7 @@ export const Contact = () => {
                     <h2 className="sm:text-4xl text-3xl mb-1 font-medium title-font dark:text-white ">
                         Contact me
                     </h2>
-                    <p className="leading-relaxed mb-5">
+                    <p className="leading-relaxed mb-5 dark:text-white">
                         If you require any further informations, please feel
                         free to reach out to me.
                     </p>

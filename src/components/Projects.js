@@ -24,7 +24,7 @@ export const Projects = () => {
                             className="sm:w-1/2 w-full h-full p-4"
                             target="_blank"
                         >
-                            <div className="flex relative h-80">
+                            <div className="flex relative h-80 sm:h-fit">
                                 {/* <img
                                     alt="gallery"
                                     className="absolute inset-0 w-full h-full object-cover object-center"

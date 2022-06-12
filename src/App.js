@@ -16,7 +16,7 @@ export default function App() {
     }, []);
 
     return (
-        <main className="text-gray-400 bg-white-900 dark:bg-gray-900 body-font">
+        <main className="text-black bg-white-900 dark:bg-gray-900 body-font">
             <Navbar/>
             <About/>
             <Projects/>

@@ -54,7 +54,7 @@ export const skills = [
   "Symfony",
   "ZEND",
   "Codeigniter",
-  "Node",
+  "NodeJS/Express",
   "MySQL",
   "MongoDB",
   "HTML/CSS",
