@@ -24,22 +24,6 @@ export const projects = [
     link: "https://myfoodrecipeblog.herokuapp.com/",
   },
   {
-    title: "Internship at Price Observatory",
-    subtitle: "Codeigniter, PHP7, MySQL, JavaScript, Jquery, Redis, Bitbucket, Redmine api, SFTP, Xpath",
-    description:
-      "During my internship at Price Observatory, I developed an interface which shows price changes. This interface included some options like filtering, exporting and pagination. I also improved chrome extension Price Observatory and configured crawlers to retrieve precise information on Websites.",
-    image: "./PO-dashboard.png",
-    link: "https://www.price-observatory.com/fr",
-  },
-  {
-    title: "Internship at La poste groupe - Midi-Pyrénées",
-    subtitle: "PHP, HTML/CSS, JavaScript, SQlite, Isotope JS, Datatables",
-    description:
-      "During this internship, I improved ergonomics of the intranet site. I created a web supervision screen for production site. This interface allows you to track the current state of mail sorting machine.",
-    image: "./Laposte1.png",
-    link: "#",
-  },
-  {
     title: "Personnal Ecommerce Project",
     subtitle: "MERN Stack - Mongodb, Express, Reactjs, Nodejs",
     description:
@@ -66,4 +50,38 @@ export const skills = [
   "Redis",
   "Github/Gitlab/Bitbucket",
   "SAFe"
+];
+
+export const experiences = [
+  {
+    startDate: "03-25-2022",
+    endDate: null,
+    currentYear: true,
+    location: "Montpellier",
+    company: "Proxiel",
+    title: "Fullstack PHP Developpeur",
+    keywords: "Zend, PHP7, MySQL, JavaScript, Jquery, Ansible, Gitlab, Jenkins, SAFe",
+    description: "I'm currently working as a Fullstack PHP Developpeur at Proxiel for a client."
+  },
+  {
+    startDate: "03-01-2021",
+    endDate: "08-31-2021",
+    currentYear: false,
+    location: "Montpellier",
+    company: "Price Observatory",
+    title: "Intern",
+    keywords: "Codeigniter, PHP7, MySQL, JavaScript, Jquery, Redis, Bitbucket, Redmine api, SFTP, XPath, Linux, Apache",
+    description: "During my internship at Price Observatory, I developed an interface which shows price changes. This interface included some options like filtering, exporting and pagination. I also improved chrome extension Price Observatory and configured crawlers to retrieve precise information on Websites."
+  },
+  {
+    startDate: "04-18-2017",
+    endDate: "06-23-2017",
+    currentYear: false,
+    location: "Toulouse",
+    company: "Laposte Groupe",
+    title: "Intern",
+    keywords: "PHP, HTML/CSS, JavaScript, SQlite, Isotope JS, Datatables",
+    description:  "During this internship, I improved ergonomics of the intranet site. I created a web supervision screen for production site. This interface allows you to track the current state of mail sorting machine."
+  }
+  
 ];
