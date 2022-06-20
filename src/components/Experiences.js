@@ -113,7 +113,7 @@ export const Experiences = () => {
                                     currentYear={experience.currentYear}
                                 />
                                 <BodyWrapper title={experience.title}>
-                                    <Subtitle text={`Localtion: ${experience.location}`} />
+                                    <Subtitle text={`Location: ${experience.location}`} />
                                     <Subtitle text={`Company: ${experience.company}`} />
                                     <DescriptionSubtitle text={`Keywords : ${experience.keywords}`}/>
                                     <Description text={experience.description}/>
