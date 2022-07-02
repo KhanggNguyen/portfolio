@@ -2,17 +2,20 @@ import React from "react";
 import { Link } from "react-scroll";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import '../styles/about.css';
+import { useTranslation } from 'react-i18next';
 
 export const About = () => {
+    const { t, i18n } = useTranslation();
+
     return (
         <section id="about">
             <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center min-h-screen">
-                <div className="lg:w-1/2 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <div className="lg:w-2/3 md:w-2/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <span className="text-2xl text-green-400">
-                        Hi there,
+                        {t('common.hi-there')},
                     </span>
                     <h1 className="title title-font sm:text-4xl text-3xl mb-4 font-medium dark:text-white">
-                        I am a Fullstack Developer
+                        {t('common.I-am-a-Fullstack-Developer')}
                     </h1>
                     <span className="mb-4 dark:text-gray-500">I'm currently working as a Fullstack Developer. I have experiences working with differents frameworks and languages.</span>
                     <div className="mb-8 flex space-x-4 dark:text-gray-100">

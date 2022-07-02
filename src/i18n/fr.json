@@ -1,0 +1,8 @@
+{
+    "common": {
+        "hi-there": "Salut",
+        "I-am-a-Fullstack-Developer": "Je suis un développeur web fullstack",
+        "translate-button": "FR",
+        "translated-text": "C'est du français"
+    }
+}
