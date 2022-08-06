@@ -107,7 +107,7 @@ export const Contact = () => {
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
                         {errors.name && (
-                            <span className="errorMessage">
+                            <span className="errorMessage text-red-600">
                                 {errors.name.message}
                             </span>
                         )}
@@ -131,7 +131,7 @@ export const Contact = () => {
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
                         {errors.phone && (
-                            <span className="errorMessage">
+                            <span className="errorMessage text-red-600">
                                 Please enter a valid phone number.
                             </span>
                         )}
@@ -155,7 +155,7 @@ export const Contact = () => {
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
                         {errors.email && (
-                            <span className="errorMessage">
+                            <span className="errorMessage text-red-600">
                                 Please enter a valid email address
                             </span>
                         )}
@@ -179,7 +179,7 @@ export const Contact = () => {
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                         />
                         {errors.message && (
-                            <span className="errorMessage">
+                            <span className="errorMessage text-red-600">
                                 Please enter a message
                             </span>
                         )}
