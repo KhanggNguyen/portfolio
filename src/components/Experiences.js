@@ -106,7 +106,7 @@ export const Experiences = () => {
                 <div className="flex flex-wrap m-4">
                     <Timeline>
                         {experiences.map((experience) => (
-                            <Container>
+                            <Container key={experience.startDate}>
                                 <DateSection
                                     startDate={experience.startDate}
                                     endDate={experience.endDate}
