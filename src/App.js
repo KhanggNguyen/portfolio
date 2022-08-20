@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Navbar } from "./components/Navbar";
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
@@ -16,13 +16,15 @@ export default function App() {
     }, []);
 
     return (
-        <main className="text-black bg-white-900 dark:bg-gray-900 body-font">
-            <Navbar />
-            <About />
-            <Experiences />
-            <Projects />
-            <Skills />
-            <Contact />
-        </main>
+        <Suspense fallback="loading">
+            <main className="text-black bg-white-900 dark:bg-gray-900 body-font">
+                <Navbar />
+                <About />
+                <Experiences />
+                <Projects />
+                <Skills />
+                <Contact />
+            </main>
+        </Suspense>
     );
 }

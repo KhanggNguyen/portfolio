@@ -6,8 +6,8 @@ import '../styles/experiences.css'
 
 const Timeline = ({ theme, children}) => {
     return children ? (
-        <div class="timeline-wrapper">
-            <div class="timeline-wrapper-inner">{children}</div>
+        <div className="timeline-wrapper">
+            <div className="timeline-wrapper-inner">{children}</div>
         </div>
     ) : (
         <></>
@@ -16,7 +16,7 @@ const Timeline = ({ theme, children}) => {
 
 const Container = ({ theme, children }) => {
     return children ? (
-        <section class="experiences">
+        <section className="experiences">
             {children[0]}
             <div>{children[1]}</div>
         </section>
@@ -26,9 +26,9 @@ const Container = ({ theme, children }) => {
 };
 
 const BodyWrapper = ({title, children}) => {
-    return (<article class="body-wrapper">
-        <p class="title text-left font-medium m-0">{title}</p>
-        <ul class="body-inner text-left p-0 mt-5 mb-16 last:mb-0">
+    return (<article className="body-wrapper">
+        <p className="title text-left font-medium m-0">{title}</p>
+        <ul className="body-inner text-left p-0 mt-5 mb-16 last:mb-0">
             {children}
         </ul>
     </article>)
@@ -46,15 +46,15 @@ const Description = ({ theme, text, variant = "description" }) => {
 };
 
 const Subtitle = ({ theme, text }) => {
-    return <div class="subtitle">{text}</div>;
+    return <div className="subtitle">{text}</div>;
 };
 
 const DescriptionSubtitle = ({ theme, text }) => {
-    return <li class="description-subtitle">{text}</li>;
+    return <li className="description-subtitle">{text}</li>;
 };
 
 const DescriptionText = ({ theme, text }) => {
-    return <li class="description-text">{text}</li>;
+    return <li className="description-text">{text}</li>;
 };
 
 const DateSection = ({ startDate, endDate, currentYear = false }) => {
@@ -67,17 +67,17 @@ const DateSection = ({ startDate, endDate, currentYear = false }) => {
 
     const _endDate = endDate ? (
         <>
-            <span class="text-sm mt-3 p-0">To</span> 
+            <span className="text-sm mt-3 p-0">To</span> 
             <time dateTime={endDate}>{transformDate({ date: endDate })}</time>
         </>
     ) : <>
-        <span class="text-sm mt-3 p-0">To</span> 
-        <p>Now</p>
+        <span className="text-sm mt-3 p-0">To</span> 
+        <span>Now</span>
     </>;
 
     const _startDate = (
         <>
-            <span class="text-sm mt-3 p-0">From</span>
+            <span className="text-sm mt-3 p-0">From</span>
             <time dateTime={startDate}>
                 {transformDate({ date: startDate })}
             </time>
@@ -85,7 +85,7 @@ const DateSection = ({ startDate, endDate, currentYear = false }) => {
     );
 
     return (
-        <p class="date-wrapper">
+        <p className="date-wrapper">
             {_currentYear}
             {_endDate}
             {_startDate}

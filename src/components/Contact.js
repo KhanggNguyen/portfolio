@@ -70,7 +70,7 @@ export const Contact = () => {
                     </div>
                 </div>
                 <form
-                    netlify
+                    netlify="true"
                     id="contact-form"
                     name="contact"
                     className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
@@ -184,8 +184,8 @@ export const Contact = () => {
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                         />
                         {errors.message && (
-                            <span className="errorMessage text-red-600">
-                                {errors.message.message}
+                            <span className="errorMessage">
+                                Please enter a message
                             </span>
                         )}
                     </div>

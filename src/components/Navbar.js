@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import Toggle from "./Toggle";
+import Lang from "./Lang";
 import '../styles/navbar.css';
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
+    const { t } = useTranslation();
     const [active, setActive] = useState("");
     
     const handleSetActive = (to) => {
@@ -24,7 +27,7 @@ export const Navbar = () => {
     return (
         <header className="bg-gray-800 md:sticky top-0 z-50">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center dark:text-gray-400">
-                <a className="title-font font-medium text-white mb-4 md:mb-0">
+                <div className="title-font font-medium text-white mb-4 md:mb-0">
                     <Link
                         to="about"
                         spy={true}
@@ -34,7 +37,7 @@ export const Navbar = () => {
                     >
                         Nguyen Huu Khang
                     </Link> 
-                </a>
+                </div>
                 <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap space-x-4 items-center text-base justify-center">
                     <Link
                         activeClass="active"
@@ -45,7 +48,7 @@ export const Navbar = () => {
                         className={`cursor-pointer font-mono hover:text-white ${active === "about" ? "text-white" : ""}` }
                         onSetActive={handleSetActive}
                     >
-                        About
+                        {t('common.about')}
                     </Link>
                     <Link
                         activeClass="active"
@@ -56,7 +59,7 @@ export const Navbar = () => {
                         className={`cursor-pointer font-mono hover:text-white ${active === "experiences" ? "text-white" : ""}` }
                         onSetActive={handleSetActive}
                     >
-                        Experiences
+                        {t('common.experiences')}
                     </Link>
                     <Link
                         activeClass="active"
@@ -67,7 +70,7 @@ export const Navbar = () => {
                         className={`cursor-pointer font-mono hover:text-white ${ active === "projects" ? "text-white" : ""}`}
                         onSetActive={handleSetActive}
                     >
-                        Projects
+                        {t('common.projects')}
                     </Link>
                     <Link
                         activeClass="active"
@@ -78,9 +81,11 @@ export const Navbar = () => {
                         className={`cursor-pointer font-mono hover:text-white ${active === "skills" ? "text-white" : ""}`}
                         onSetActive={handleSetActive}
                     >
-                        Skills
+                        {t('common.skills')}
                     </Link>
                 </nav>
+
+                <Lang />
 
                 <Toggle />
 
@@ -93,7 +98,7 @@ export const Navbar = () => {
                     className={`gradient-border font-mono  ${active === "contact" ? "text-white" : ""}`}
                     onSetActive={handleSetActive}
                 >
-                    Hire Me
+                    {t('common.contact')}
                 </Link>
                 
             </div>

@@ -1,0 +1,17 @@
+{
+    "common": {
+        "translate-button": "EN",
+        "translated-text": "This is english",
+        "about": "About",
+        "experiences":"Experiences",
+        "projects":"Projects",
+        "skills": "Skills",
+        "contact":"Hire me"
+    },
+    "about": {
+        "hi-there": "Hi there",
+        "I-am-a-Fullstack-Developer": "I am a Fullstack Web Developer",
+        "intro": "I'm currently working as a Fullstack Developer. I can work with differents frameworks and languages.",
+        "work-with-me": "Work with me"
+    }
+}
