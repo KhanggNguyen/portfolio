@@ -61,7 +61,7 @@ export const experiences = [
     company: "Proxiel",
     title: "Fullstack PHP Developper",
     keywords: "Zend, PHP7, MySQL, JavaScript, Jquery, Ansible, Gitlab, Jenkins, SAFe",
-    description: "I'm currently working as a Fullstack PHP Developpeur at Proxiel for a client."
+    description: "I'm currently working as a Fullstack PHP Developpeur at Proxiel for Sopra Steria."
   },
   {
     startDate: "03-01-2021",

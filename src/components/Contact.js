@@ -95,14 +95,14 @@ export const Contact = () => {
                             type="text"
                             id="name"
                             name="name"
+                            placeholder="Dupont Toto"
                             {...register("name", {
-                                required: {
-                                    value: true,
-                                    message: "Please enter your name.",
+                                required: "Please enter your name.",
+                                maxLength: {
+                                    value: 30,
+                                    message: "Name cannot be longer than 30 characters.",
                                 },
-                                maxLength: 30,
-                                message:
-                                    "Name cannot be longer than 30 characters.",
+                                
                             })}
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
@@ -123,6 +123,7 @@ export const Contact = () => {
                             type="tel"
                             id="phone"
                             name="phone"
+                            placeholder="xx xx xx xx xx"
                             {...register("phone", {
                                 required: false,
                                 pattern:
@@ -147,6 +148,7 @@ export const Contact = () => {
                             type="email"
                             id="email"
                             name="email"
+                            placeholder="toto@gmail.com"
                             {...register("email", {
                                 required: true,
                                 pattern:
@@ -170,16 +172,19 @@ export const Contact = () => {
                         <textarea
                             id="message"
                             name="message"
+                            placeholder="Hello,..."
                             {...register("message", {
-                                required: true,
-                                minLength: 20,
-                                message:
-                                    "Name cannot be less than 20 characters.",
+                                required: "Please enter a message",
+                                minLength: {
+                                    value: 20,
+                                    message: "Message cannot be less than 20 characters.",
+                                },
+                                
                             })}
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                         />
                         {errors.message && (
-                            <span className="errorMessage text-red-600">
+                            <span className="errorMessage">
                                 Please enter a message
                             </span>
                         )}
