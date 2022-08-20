@@ -1,8 +1,17 @@
 {
     "common": {
+        "translate-button": "FR",
+        "translated-text": "C'est du français",
+        "about": "A propos",
+        "experiences":"Expériences",
+        "projects":"Projets",
+        "skills": "Competences",
+        "contact":"Contact"
+    },
+    "about": {
         "hi-there": "Salut",
         "I-am-a-Fullstack-Developer": "Je suis un développeur web fullstack",
-        "translate-button": "FR",
-        "translated-text": "C'est du français"
+        "intro": "Je travaille actuellement en tant que Développeur Fullstack. Je peux travailler avec les différents frameworks et langages.",
+        "work-with-me": "Contactez-moi"
     }
 }

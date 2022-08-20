@@ -5,19 +5,19 @@ import '../styles/about.css';
 import { useTranslation } from 'react-i18next';
 
 export const About = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <section id="about">
             <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center min-h-screen">
                 <div className="lg:w-2/3 md:w-2/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <span className="text-2xl text-green-400">
-                        {t('common.hi-there')},
+                        {t('about.hi-there')},
                     </span>
                     <h1 className="title title-font sm:text-4xl text-3xl mb-4 font-medium dark:text-white">
-                        {t('common.I-am-a-Fullstack-Developer')}
+                        {t('about.I-am-a-Fullstack-Developer')}
                     </h1>
-                    <span className="mb-4 dark:text-gray-500">I'm currently working as a Fullstack Developer. I have experiences working with differents frameworks and languages.</span>
+                    <span className="mb-4 dark:text-gray-500">{t('about.intro')}</span>
                     <div className="mb-8 flex space-x-4 dark:text-gray-100">
                         <a
                             href="https://www.linkedin.com/in/huu-khang-nguyen-216355161/"
@@ -41,7 +41,7 @@ export const About = () => {
                             offset={-100}
                             className={`cursor-pointer inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg`}
                         >
-                            Work With Me
+                            {t("about.work-with-me")}
                         </Link>
                         <Link
                             activeClass="active"
