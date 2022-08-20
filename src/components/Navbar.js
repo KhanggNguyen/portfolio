@@ -30,7 +30,7 @@ export const Navbar = () => {
                         spy={true}
                         smooth={true}
                         offset={-100}
-                        className="cursor-pointer ml-3 text-xl"
+                        className="cursor-pointer ml-3 text-xl font-sans"
                     >
                         Nguyen Huu Khang
                     </Link> 
@@ -42,7 +42,7 @@ export const Navbar = () => {
                         spy={true}
                         smooth={true}
                         offset={-100}
-                        className={`cursor-pointer hover:text-white ${active === "about" ? "text-white" : ""}` }
+                        className={`cursor-pointer font-mono hover:text-white ${active === "about" ? "text-white" : ""}` }
                         onSetActive={handleSetActive}
                     >
                         About
@@ -53,7 +53,7 @@ export const Navbar = () => {
                         spy={true}
                         smooth={true}
                         offset={-100}
-                        className={`cursor-pointer hover:text-white ${active === "experiences" ? "text-white" : ""}` }
+                        className={`cursor-pointer font-mono hover:text-white ${active === "experiences" ? "text-white" : ""}` }
                         onSetActive={handleSetActive}
                     >
                         Experiences
@@ -64,7 +64,7 @@ export const Navbar = () => {
                         spy={true}
                         smooth={true}
                         offset={-100}
-                        className={`cursor-pointer hover:text-white ${ active === "projects" ? "text-white" : ""}`}
+                        className={`cursor-pointer font-mono hover:text-white ${ active === "projects" ? "text-white" : ""}`}
                         onSetActive={handleSetActive}
                     >
                         Projects
@@ -75,7 +75,7 @@ export const Navbar = () => {
                         spy={true}
                         smooth={true}
                         offset={-100}
-                        className={`cursor-pointer hover:text-white ${active === "skills" ? "text-white" : ""}`}
+                        className={`cursor-pointer font-mono hover:text-white ${active === "skills" ? "text-white" : ""}`}
                         onSetActive={handleSetActive}
                     >
                         Skills
@@ -90,7 +90,7 @@ export const Navbar = () => {
                     spy={true}
                     smooth={true}
                     offset={-100}
-                    className={`gradient-border  ${active === "contact" ? "text-white" : ""}`}
+                    className={`gradient-border font-mono  ${active === "contact" ? "text-white" : ""}`}
                     onSetActive={handleSetActive}
                 >
                     Hire Me

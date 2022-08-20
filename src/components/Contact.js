@@ -95,6 +95,7 @@ export const Contact = () => {
                             type="text"
                             id="name"
                             name="name"
+                            placeholder="Dupont Toto"
                             {...register("name", {
                                 required: "Please enter your name.",
                                 maxLength: {
@@ -147,6 +148,7 @@ export const Contact = () => {
                             type="email"
                             id="email"
                             name="email"
+                            placeholder="toto@gmail.com"
                             {...register("email", {
                                 required: true,
                                 pattern:
@@ -170,6 +172,7 @@ export const Contact = () => {
                         <textarea
                             id="message"
                             name="message"
+                            placeholder="Hello,..."
                             {...register("message", {
                                 required: "Please enter a message",
                                 minLength: {
