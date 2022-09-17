@@ -26,7 +26,7 @@ export const Navbar = () => {
 
     return (
         <header className="bg-gray-800 md:sticky top-0 z-50">
-            <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center dark:text-gray-400">
+            <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center text-gray-400">
                 <div className="title-font font-medium text-white mb-4 md:mb-0">
                     <Link
                         to="about"

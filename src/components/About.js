@@ -17,17 +17,19 @@ export const About = () => {
                     <h1 className="title title-font sm:text-4xl text-3xl mb-4 font-medium dark:text-white">
                         {t('about.I-am-a-Fullstack-Developer')}
                     </h1>
-                    <span className="mb-4 dark:text-gray-500">{t('about.intro')}</span>
+                    <span className="mb-4 h-20 dark:text-gray-500">{t('about.intro')}</span>
                     <div className="mb-8 flex space-x-4 dark:text-gray-100">
                         <a
                             href="https://www.linkedin.com/in/huu-khang-nguyen-216355161/"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <FaLinkedin />
                         </a>
                         <a
                             href="https://github.com/KhanggNguyen"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <FaGithub />
                         </a>
@@ -51,7 +53,7 @@ export const About = () => {
                             offset={-100}
                             className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white cursor-pointer  rounded text-lg"
                         >
-                            See My Past Work
+                            {t("about.see-my-past-work")}
                         </Link>
                     </div>
                 </div>

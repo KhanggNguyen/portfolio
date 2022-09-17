@@ -12,6 +12,15 @@
         "hi-there": "Hi there",
         "I-am-a-Fullstack-Developer": "I am a Fullstack Web Developer",
         "intro": "I'm currently working as a Fullstack Developer. I can work with differents frameworks and languages.",
-        "work-with-me": "Work with me"
+        "work-with-me": "Work with me",
+        "see-my-past-work": "See my past works"
+    },
+    "contact": {
+        "title": "Contact me",
+        "intro": "If you require any further informations, please feel free to reach out to me.",
+        "name": "Name",
+        "phone": "Phone",
+        "email": "Email",
+        "message": "message"
     }
 }

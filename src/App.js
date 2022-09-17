@@ -9,15 +9,16 @@ import { useEffect } from "react";
 import useDarkMode from "./hook/useDarkMode";
 
 export default function App() {
-    const [colorTheme, setTheme] = useDarkMode();
+    const [colorTheme, setTheme] = useDarkMode(getDefaultTheme());
 
-    useEffect(() => {
-        setTheme("dark");
-    }, []);
+    function getDefaultTheme() {
+        const selectedTheme = JSON.parse(localStorage.getItem("theme"));
+        return selectedTheme || "dark";
+    }
 
     return (
         <Suspense fallback="loading">
-            <main className="text-black bg-white-900 dark:bg-gray-900 body-font">
+            <main className="font-sans text-black bg-slate-300 dark:bg-gray-900 body-font">
                 <Navbar />
                 <About />
                 <Experiences />

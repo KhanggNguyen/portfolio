@@ -1,8 +1,11 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+    const { t } = useTranslation();
+
     const {
         register,
         handleSubmit,
@@ -21,17 +24,22 @@ export const Contact = () => {
                 message,
             };
 
-            emailjs.send(
-                process.env.REACT_APP_SERVICE_ID,
-                process.env.REACT_APP_TEMPLATE_ID,
-                templateParams,
-                process.env.REACT_APP_USER_ID
-            ).then(function(response){
-                console.log('Mail sent successfully.', response);
-                reset();
-            },function(error){
-                console.log(`Error while sending mail : `, error);
-            });
+            emailjs
+                .send(
+                    process.env.REACT_APP_SERVICE_ID,
+                    process.env.REACT_APP_TEMPLATE_ID,
+                    templateParams,
+                    process.env.REACT_APP_USER_ID
+                )
+                .then(
+                    function (response) {
+                        console.log("Mail sent successfully.", response);
+                        reset();
+                    },
+                    function (error) {
+                        console.log(`Error while sending mail : `, error);
+                    }
+                );
         } catch (e) {
             console.log(e);
         }
@@ -40,7 +48,7 @@ export const Contact = () => {
     return (
         <section id="contact" className="relative">
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-                <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <div className="lg:w-2/3 md:w-1/2 dark:bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                     <iframe
                         width="100%"
                         height="100%"
@@ -78,18 +86,17 @@ export const Contact = () => {
                     noValidate
                 >
                     <h2 className="sm:text-4xl text-3xl mb-1 font-medium title-font dark:text-white ">
-                        Contact me
+                        {t("contact.title")}
                     </h2>
                     <p className="leading-relaxed mb-5 dark:text-white">
-                        If you require any further informations, please feel
-                        free to reach out to me.
+                        {t("contact.intro")}
                     </p>
                     <div className="relative mb-4">
                         <label
                             htmlFor="name"
-                            className="leading-7 text-sm text-gray-400"
+                            className="leading-7 text-sm dark:text-gray-400"
                         >
-                            Name
+                            {t("contact.name")}
                         </label>
                         <input
                             type="text"
@@ -100,9 +107,9 @@ export const Contact = () => {
                                 required: "Please enter your name.",
                                 maxLength: {
                                     value: 30,
-                                    message: "Name cannot be longer than 30 characters.",
+                                    message:
+                                        "Name cannot be longer than 30 characters.",
                                 },
-                                
                             })}
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
@@ -115,9 +122,9 @@ export const Contact = () => {
                     <div className="relative mb-4">
                         <label
                             htmlFor="tel"
-                            className="leading-7 text-sm text-gray-400"
+                            className="leading-7 text-sm dark:text-gray-400"
                         >
-                            Phone
+                            {t("contact.phone")}
                         </label>
                         <input
                             type="tel"
@@ -140,9 +147,9 @@ export const Contact = () => {
                     <div className="relative mb-4">
                         <label
                             htmlFor="email"
-                            className="leading-7 text-sm text-gray-400"
+                            className="leading-7 text-sm dark:text-gray-400"
                         >
-                            Email
+                            {t("contact.email")}
                         </label>
                         <input
                             type="email"
@@ -165,9 +172,9 @@ export const Contact = () => {
                     <div className="relative mb-4">
                         <label
                             htmlFor="message"
-                            className="leading-7 text-sm text-gray-400"
+                            className="leading-7 text-sm dark:text-gray-400"
                         >
-                            Message
+                            {t("contact.message")}
                         </label>
                         <textarea
                             id="message"
@@ -177,9 +184,9 @@ export const Contact = () => {
                                 required: "Please enter a message",
                                 minLength: {
                                     value: 20,
-                                    message: "Message cannot be less than 20 characters.",
+                                    message:
+                                        "Message cannot be less than 20 characters.",
                                 },
-                                
                             })}
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                         />

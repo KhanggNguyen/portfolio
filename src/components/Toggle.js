@@ -4,7 +4,7 @@ import useDarkMode from "../hook/useDarkMode";
 
 const Toggle = () => {
     const [colorTheme, setTheme] = useDarkMode();
-    
+
     return (
         <span
             onClick={() => setTheme(colorTheme)}
