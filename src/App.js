@@ -18,7 +18,7 @@ export default function App() {
 
     return (
         <Suspense fallback="loading">
-            <main className="font-sans text-black bg-slate-300 dark:bg-gray-900 body-font">
+            <main className="font-sans text-black bg-white-300 dark:bg-gray-900 body-font">
                 <Navbar />
                 <About />
                 <Experiences />

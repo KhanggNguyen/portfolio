@@ -8,7 +8,7 @@ const Toggle = () => {
     return (
         <span
             onClick={() => setTheme(colorTheme)}
-            className="w-10 h-10 mr-5 dark:bg-black-500 bg-white-500 block rounded-full shadow-lg cursor-pointer text-white flex items-center justify-center"
+            className="w-10 h-10 mr-5 bg-white-500 dark:bg-black-900 text-gray-400  block rounded-full shadow-lg cursor-pointer text-white flex items-center justify-center"
         >
             {colorTheme === "light" ? (
                 <svg

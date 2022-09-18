@@ -1,8 +1,9 @@
+
 .gradient-border {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #111027;
+    /* background: #111027; */
     box-shadow: inset 10px 10px 20px #070A10, inset -10px -10px 20px #1b263e;
     height: 5rem;
     width: 5rem;
