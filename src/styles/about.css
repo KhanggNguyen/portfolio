@@ -25,3 +25,9 @@ h1.title {
         border-color: rgb(16, 185, 129);
     }
 }
+
+@media screen and (max-width:600px) {
+    h1{
+        display:none;
+    };
+}

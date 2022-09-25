@@ -38,67 +38,98 @@ export const Navbar = () => {
                         Nguyen Huu Khang
                     </Link>
                 </div>
-                <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap space-x-4 items-center text-base justify-center">
-                    <Link
-                        activeClass="active"
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        offset={-100}
-                        className={`cursor-pointer font-mono hover:text-emerald-200 dark:hover:text-white ${
-                            active === "about"
-                                ? "text-emerald-700 dark:text-white"
-                                : ""
-                        }`}
-                        onSetActive={handleSetActive}
+                <div class="block h-10 lg:hidden sm:my-10">
+                    <button
+                        onClick={() => {
+                            let menu = document.getElementById("menu");
+                            menu.classList.toggle("hidden");
+                        }}
+                        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
                     >
-                        {t("common.about")}
-                    </Link>
-                    <Link
-                        activeClass="active"
-                        to="experiences"
-                        spy={true}
-                        smooth={true}
-                        offset={-100}
-                        className={`cursor-pointer font-mono hover:text-emerald-200 dark:hover:text-white ${
-                            active === "experiences"
-                                ? "text-emerald-700 dark:text-white"
-                                : ""
-                        }`}
-                        onSetActive={handleSetActive}
+                        <svg
+                            class="fill-current h-3 w-3 cursor-pointer block"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <title>Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                        </svg>
+                    </button>
+                </div>
+                <nav
+                    className="flex flex-wrap items-center text-base justify-between
+                                md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700"
+                >
+                    <div
+                        class="hidden w-full block flex-grow 
+                        md:justify-between md:pt-0  
+                        lg:flex lg:items-center lg:w-auto lg:space-x-4 "
+                        id="menu"
                     >
-                        {t("common.experiences")}
-                    </Link>
-                    <Link
-                        activeClass="active"
-                        to="projects"
-                        spy={true}
-                        smooth={true}
-                        offset={-100}
-                        className={`cursor-pointer font-mono hover:text-emerald-200 dark:hover:text-white ${
-                            active === "projects"
-                                ? "text-emerald-700 dark:text-white"
-                                : ""
-                        }`}
-                        onSetActive={handleSetActive}
-                    >
-                        {t("common.projects")}
-                    </Link>
-                    <Link
-                        activeClass="active"
-                        to="skills"
-                        spy={true}
-                        smooth={true}
-                        offset={-100}
-                        className={`cursor-pointer font-mono hover:text-emerald-200 dark:hover:text-white ${
-                            active === "skills"
-                                ? "text-emerald-700 dark:text-white"
-                                : ""
-                        }`}
-                        onSetActive={handleSetActive}
-                    >
-                        {t("common.skills")}
-                    </Link>
+                        <Link
+                            activeClass="active"
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            className={`block cursor-pointer font-mono hover:text-emerald-200 dark:hover:text-white py-2 ${
+                                active === "about"
+                                    ? "text-emerald-700 dark:text-white"
+                                    : ""
+                            }`}
+                            onSetActive={handleSetActive}
+                        >
+                            {t("common.about")}
+                        </Link>
+
+                        <Link
+                            activeClass="active"
+                            to="experiences"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            className={`block cursor-pointer font-mono hover:text-emerald-200 dark:hover:text-white py-2 ${
+                                active === "experiences"
+                                    ? "text-emerald-700 dark:text-white"
+                                    : ""
+                            }`}
+                            onSetActive={handleSetActive}
+                        >
+                            {t("common.experiences")}
+                        </Link>
+
+                        <Link
+                            activeClass="active"
+                            to="projects"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            className={`block cursor-pointer font-mono hover:text-emerald-200 dark:hover:text-white py-2 ${
+                                active === "projects"
+                                    ? "text-emerald-700 dark:text-white"
+                                    : ""
+                            }`}
+                            onSetActive={handleSetActive}
+                        >
+                            {t("common.projects")}
+                        </Link>
+
+                        <Link
+                            activeClass="active"
+                            to="skills"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            className={`block cursor-pointer font-mono hover:text-emerald-200 dark:hover:text-white py-2 ${
+                                active === "skills"
+                                    ? "text-emerald-700 dark:text-white"
+                                    : ""
+                            }`}
+                            onSetActive={handleSetActive}
+                        >
+                            {t("common.skills")}
+                        </Link>
+                    </div>
                 </nav>
 
                 <Lang />
@@ -111,7 +142,9 @@ export const Navbar = () => {
                     spy={true}
                     smooth={true}
                     offset={-100}
-                    className={`flex w-12 h-12 items-center justify-center cursor-pointer rounded-3xl border bg-slate-100 dark:bg-gray-800 font-mono text-gray-400 hover:text-emerald-200 dark:hover:text-white  ${
+                    className={`flex items-center justify-center w-12 h-12 cursor-pointer rounded-3xl border bg-slate-100  font-mono text-gray-400
+                    hover:text-emerald-200
+                    dark:bg-gray-800 dark:hover:text-white  ${
                         active === "contact"
                             ? "text-emerald-700 dark:text-white"
                             : ""

@@ -10,14 +10,14 @@ export const About = () => {
     return (
         <section id="about">
             <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center min-h-screen">
-                <div className="lg:w-2/3 md:w-2/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <div className="w-2/3 md:w-full lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <span className="text-2xl text-green-400">
                         {t('about.hi-there')},
                     </span>
                     <h1 className="title title-font sm:text-4xl text-3xl mb-4 font-medium dark:text-white">
                         {t('about.I-am-a-Fullstack-Developer')}
                     </h1>
-                    <span className="mb-4 h-20 dark:text-gray-500">{t('about.intro')}</span>
+                    <span className="mb-4 lg:h-20 sm:h-36 dark:text-gray-500">{t('about.intro')}</span>
                     <div className="mb-8 flex space-x-4 dark:text-gray-100">
                         <a
                             href="https://www.linkedin.com/in/huu-khang-nguyen-216355161/"
