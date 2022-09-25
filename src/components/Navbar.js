@@ -46,7 +46,9 @@ export const Navbar = () => {
                         smooth={true}
                         offset={-100}
                         className={`cursor-pointer font-mono hover:text-emerald-200 dark:hover:text-white ${
-                            active === "about" ? "text-emerald-700 dark:text-white" : ""
+                            active === "about"
+                                ? "text-emerald-700 dark:text-white"
+                                : ""
                         }`}
                         onSetActive={handleSetActive}
                     >
@@ -59,7 +61,9 @@ export const Navbar = () => {
                         smooth={true}
                         offset={-100}
                         className={`cursor-pointer font-mono hover:text-emerald-200 dark:hover:text-white ${
-                            active === "experiences" ? "text-emerald-700 dark:text-white" : ""
+                            active === "experiences"
+                                ? "text-emerald-700 dark:text-white"
+                                : ""
                         }`}
                         onSetActive={handleSetActive}
                     >
@@ -72,7 +76,9 @@ export const Navbar = () => {
                         smooth={true}
                         offset={-100}
                         className={`cursor-pointer font-mono hover:text-emerald-200 dark:hover:text-white ${
-                            active === "projects" ? "text-emerald-700 dark:text-white" : ""
+                            active === "projects"
+                                ? "text-emerald-700 dark:text-white"
+                                : ""
                         }`}
                         onSetActive={handleSetActive}
                     >
@@ -85,7 +91,9 @@ export const Navbar = () => {
                         smooth={true}
                         offset={-100}
                         className={`cursor-pointer font-mono hover:text-emerald-200 dark:hover:text-white ${
-                            active === "skills" ? "text-emerald-700 dark:text-white" : ""
+                            active === "skills"
+                                ? "text-emerald-700 dark:text-white"
+                                : ""
                         }`}
                         onSetActive={handleSetActive}
                     >
@@ -103,8 +111,10 @@ export const Navbar = () => {
                     spy={true}
                     smooth={true}
                     offset={-100}
-                    className={`flex w-12 h-12 items-center justify-center cursor-pointer rounded-3xl border bg-slate-100 dark:bg-gray-800 font-mono text-gray-400  ${
-                        active === "contact" ? "text-emerald-700 dark:text-white" : ""
+                    className={`flex w-12 h-12 items-center justify-center cursor-pointer rounded-3xl border bg-slate-100 dark:bg-gray-800 font-mono text-gray-400 hover:text-emerald-200 dark:hover:text-white  ${
+                        active === "contact"
+                            ? "text-emerald-700 dark:text-white"
+                            : ""
                     }`}
                     onSetActive={handleSetActive}
                 >

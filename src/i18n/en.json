@@ -22,5 +22,15 @@
         "phone": "Phone",
         "email": "Email",
         "message": "message"
+    },
+    "experiences": {
+        "title": "Experiences",
+        "location": "Location",
+        "company": "Company",
+        "keywords": "Keywords"
+    },
+    "projects": {
+        "title": "Apps I've Built",
+        "subtitle": "Here u can check out some projects that I've built or participated during my formation or my internship."
     }
 }

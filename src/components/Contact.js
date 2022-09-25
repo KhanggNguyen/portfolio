@@ -48,7 +48,7 @@ export const Contact = () => {
     return (
         <section id="contact" className="relative">
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-                <div className="lg:w-2/3 md:w-1/2 dark:bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <div className="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                     <iframe
                         width="100%"
                         height="100%"
@@ -60,15 +60,15 @@ export const Contact = () => {
                         style={{ filter: "opacity(0.7)" }}
                         src={`https://www.google.com/maps/embed/v1/place?q=Toulouse&key=${process.env.REACT_APP_GOOGLEMAP_API}`}
                     />
-                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
+                    <div className="dark:bg-gray-900 bg-white dark:text-white relative flex flex-wrap py-6 rounded shadow-md">
                         <div className="lg:w-2/5 px-6">
-                            <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+                            <h2 className="title-font font-semibold tracking-widest text-xs">
                                 ADDRESS
                             </h2>
-                            <p className="mt-1 text-white">Toulouse, France</p>
+                            <p className="mt-1">Toulouse, France</p>
                         </div>
                         <div className="lg:w-3/5 px-6 mt-4 lg:mt-0">
-                            <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+                            <h2 className="title-font font-semibold tracking-widest text-xs">
                                 EMAIL
                             </h2>
                             <a className="text-indigo-400 leading-relaxed">
@@ -111,7 +111,7 @@ export const Contact = () => {
                                         "Name cannot be longer than 30 characters.",
                                 },
                             })}
-                            className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            className="w-full dark:bg-gray-800 border-solid border-2 border-emerald-700 rounded border dark:border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
                         {errors.name && (
                             <span className="errorMessage text-red-600">
@@ -136,7 +136,7 @@ export const Contact = () => {
                                 pattern:
                                     /^(?:(?:\+|00)33[\s.-]{0,3}(?:\(0\)[\s.-]{0,3})?|0)[1-9](?:(?:[\s.-]?\d{2}){4}|\d{2}(?:[\s.-]?\d{3}){2})$/,
                             })}
-                            className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            className="w-full dark:bg-gray-800 border-solid border-2 border-emerald-700 rounded border dark:border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
                         {errors.phone && (
                             <span className="errorMessage text-red-600">
@@ -161,7 +161,7 @@ export const Contact = () => {
                                 pattern:
                                     /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                             })}
-                            className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            className="w-full dark:bg-gray-800 border-solid border-2 border-emerald-700 rounded border dark:border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
                         {errors.email && (
                             <span className="errorMessage text-red-600">
@@ -188,7 +188,7 @@ export const Contact = () => {
                                         "Message cannot be less than 20 characters.",
                                 },
                             })}
-                            className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                            className="w-full dark:bg-gray-800 border-solid border-2 border-emerald-700 rounded border dark:border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none dark:text-gray-100 h-32 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
                         {errors.message && (
                             <span className="errorMessage">

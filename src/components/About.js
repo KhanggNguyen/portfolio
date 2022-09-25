@@ -41,7 +41,7 @@ export const About = () => {
                             spy={true}
                             smooth={true}
                             offset={-100}
-                            className={`cursor-pointer inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg`}
+                            className={`cursor-pointer inline-flex text-white bg-green-500 border-0 py-2 px-6 rounded-3xl focus:outline-none hover:bg-green-600 rounded text-lg`}
                         >
                             {t("about.work-with-me")}
                         </Link>
@@ -51,7 +51,7 @@ export const About = () => {
                             spy={true}
                             smooth={true}
                             offset={-100}
-                            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white cursor-pointer  rounded text-lg"
+                            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 rounded-3xl focus:outline-none hover:bg-gray-700 hover:text-white cursor-pointer  rounded text-lg"
                         >
                             {t("about.see-my-past-work")}
                         </Link>

@@ -2,9 +2,10 @@ import React from "react";
 import { experiences } from "../data";
 import { BriefcaseIcon } from "@heroicons/react/solid";
 import { transformDate } from "../helpers/date-transformer";
-import '../styles/experiences.css'
+import "../styles/experiences.css";
+import { useTranslation } from "react-i18next";
 
-const Timeline = ({ theme, children}) => {
+const Timeline = ({ theme, children }) => {
     return children ? (
         <div className="timeline-wrapper">
             <div className="timeline-wrapper-inner">{children}</div>
@@ -25,14 +26,16 @@ const Container = ({ theme, children }) => {
     );
 };
 
-const BodyWrapper = ({title, children}) => {
-    return (<article className="body-wrapper">
-        <p className="title text-left font-medium m-0">{title}</p>
-        <ul className="body-inner text-left p-0 mt-5 mb-16 last:mb-0">
-            {children}
-        </ul>
-    </article>)
-}
+const BodyWrapper = ({ title, children }) => {
+    return (
+        <article className="body-wrapper">
+            <p className="title text-left font-medium m-0">{title}</p>
+            <ul className="body-inner text-left p-0 mt-5 mb-16 last:mb-0">
+                {children}
+            </ul>
+        </article>
+    );
+};
 
 const Description = ({ theme, text, variant = "description" }) => {
     switch (variant) {
@@ -67,13 +70,15 @@ const DateSection = ({ startDate, endDate, currentYear = false }) => {
 
     const _endDate = endDate ? (
         <>
-            <span className="text-sm mt-3 p-0">To</span> 
+            <span className="text-sm mt-3 p-0">To</span>
             <time dateTime={endDate}>{transformDate({ date: endDate })}</time>
         </>
-    ) : <>
-        <span className="text-sm mt-3 p-0">To</span> 
-        <span>Now</span>
-    </>;
+    ) : (
+        <>
+            <span className="text-sm mt-3 p-0">To</span>
+            <span>Now</span>
+        </>
+    );
 
     const _startDate = (
         <>
@@ -94,13 +99,15 @@ const DateSection = ({ startDate, endDate, currentYear = false }) => {
 };
 
 export const Experiences = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="experiences" className="dark:text-gray-400 body-font">
             <div className="container px-5 py-10 mx-auto text-center lg:px-40  min-h-screen">
                 <div className="flex flex-col w-full mb-20">
                     <BriefcaseIcon className="mx-auto inline-block w-10 mb-4" />
                     <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 dark:text-white">
-                        Experiences
+                        {t('experiences.title')}
                     </h1>
                 </div>
                 <div className="flex flex-wrap m-4">
@@ -113,10 +120,18 @@ export const Experiences = () => {
                                     currentYear={experience.currentYear}
                                 />
                                 <BodyWrapper title={experience.title}>
-                                    <Subtitle text={`Location: ${experience.location}`} />
-                                    <Subtitle text={`Company: ${experience.company}`} />
-                                    <DescriptionSubtitle text={`Keywords : ${experience.keywords}`}/>
-                                    <Description text={experience.description}/>
+                                    <Subtitle
+                                        text={`${t('experiences.location')}: ${experience.location}`}
+                                    />
+                                    <Subtitle
+                                        text={`${t('experiences.company')}: ${experience.company}`}
+                                    />
+                                    <DescriptionSubtitle
+                                        text={`${t('experiences.keywords')} : ${experience.keywords}`}
+                                    />
+                                    <Description
+                                        text={experience.description}
+                                    />
                                 </BodyWrapper>
                             </Container>
                         ))}

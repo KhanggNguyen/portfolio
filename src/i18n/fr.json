@@ -22,5 +22,15 @@
         "phone": "Téléphone",
         "email": "Adresse email",
         "message": "Message"
+    },
+    "experiences": {
+        "title": "Expériences",
+        "location": "Lieu",
+        "company": "Société",
+        "keywords": "Mots clés"
+    },
+    "projects": {
+        "title": "Projets",
+        "subtitle": "____To translate____"
     }
 }
