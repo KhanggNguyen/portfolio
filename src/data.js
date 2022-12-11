@@ -5,7 +5,7 @@ export const projects = [
     description:
       "A simple dictionnary application which allows you to find word's information. This application uses data provided by http://www.jeuxdemots.org/jdm-accueil.php",
     image: "./diko-app.gif",
-    link: "https://diko-app-jdm.herokuapp.com/",
+    link: "https://diko-app-jdm.netlify.app/",
   },
   {
     title: "Simple chat app",
