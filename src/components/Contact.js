@@ -33,7 +33,6 @@ export const Contact = () => {
                 )
                 .then(
                     function (response) {
-                        console.log("Mail sent successfully.", response);
                         reset();
                     },
                     function (error) {
@@ -111,7 +110,7 @@ export const Contact = () => {
                                         "Name cannot be longer than 30 characters.",
                                 },
                             })}
-                            className="w-full dark:bg-gray-800 border-solid border-2 border-emerald-700 rounded border dark:border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            className="w-full dark:bg-gray-800 border-solid border-2 border-emerald-700 rounded border dark:border-gray-700 focus:border-green-500 focus:ring-2 focus:ring-green-900 text-base outline-none dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
                         {errors.name && (
                             <span className="errorMessage text-red-600">
@@ -136,7 +135,7 @@ export const Contact = () => {
                                 pattern:
                                     /^(?:(?:\+|00)33[\s.-]{0,3}(?:\(0\)[\s.-]{0,3})?|0)[1-9](?:(?:[\s.-]?\d{2}){4}|\d{2}(?:[\s.-]?\d{3}){2})$/,
                             })}
-                            className="w-full dark:bg-gray-800 border-solid border-2 border-emerald-700 rounded border dark:border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            className="w-full dark:bg-gray-800 border-solid border-2 border-emerald-700 rounded border dark:border-gray-700 focus:border-green-500 focus:ring-2 focus:ring-green-900 text-base outline-none dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
                         {errors.phone && (
                             <span className="errorMessage text-red-600">
@@ -161,7 +160,7 @@ export const Contact = () => {
                                 pattern:
                                     /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                             })}
-                            className="w-full dark:bg-gray-800 border-solid border-2 border-emerald-700 rounded border dark:border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            className="w-full dark:bg-gray-800 border-solid border-2 border-emerald-700 rounded border dark:border-gray-700 focus:border-green-500 focus:ring-2 focus:ring-green-900 text-base outline-none dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
                         {errors.email && (
                             <span className="errorMessage text-red-600">
@@ -188,7 +187,7 @@ export const Contact = () => {
                                         "Message cannot be less than 20 characters.",
                                 },
                             })}
-                            className="w-full dark:bg-gray-800 border-solid border-2 border-emerald-700 rounded border dark:border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none dark:text-gray-100 h-32 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            className="w-full dark:bg-gray-800 border-solid border-2 border-emerald-700 rounded border dark:border-gray-700 focus:border-green-500 focus:ring-2 focus:ring-green-900 text-base outline-none dark:text-gray-100 h-32 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
                         {errors.message && (
                             <span className="errorMessage">
@@ -198,7 +197,7 @@ export const Contact = () => {
                     </div>
                     <button
                         type="submit"
-                        className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                        className="text-white border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg bg-green-500"
                     >
                         Submit
                     </button>

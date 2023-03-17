@@ -13,7 +13,7 @@ export default function App() {
 
     function getDefaultTheme() {
         const selectedTheme = JSON.parse(localStorage.getItem("theme"));
-        return selectedTheme || "dark";
+        return selectedTheme || "light";
     }
 
     return (

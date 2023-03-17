@@ -1,23 +1,25 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import '../styles/about.css';
-import { useTranslation } from 'react-i18next';
+import "../styles/about.css";
+import { useTranslation } from "react-i18next";
 
 export const About = () => {
     const { t } = useTranslation();
 
     return (
         <section id="about">
-            <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center min-h-screen">
-                <div className="w-2/3 md:w-full lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <div className="container mx-auto flex min-h-screen flex-col items-center px-10 py-20 md:flex-row">
+                <div className="mb-16 flex w-2/3 flex-col items-center text-center md:mb-0 md:w-full  md:items-start md:pr-16 md:text-left lg:pr-24">
                     <span className="text-2xl text-green-400">
-                        {t('about.hi-there')},
+                        {t("about.hi-there")},
                     </span>
-                    <h1 className="title title-font sm:text-4xl text-3xl mb-4 font-medium dark:text-white">
-                        {t('about.I-am-a-Fullstack-Developer')}
+                    <h1 className="title title-font mb-4 text-3xl font-medium dark:text-white sm:text-4xl">
+                        {t("about.I-am-a-Fullstack-Developer")}
                     </h1>
-                    <span className="mb-4 lg:h-20 sm:h-36 dark:text-gray-500">{t('about.intro')}</span>
+                    <span className="mb-4 dark:text-gray-500 sm:h-36 lg:h-20">
+                        {t("about.intro")}
+                    </span>
                     <div className="mb-8 flex space-x-4 dark:text-gray-100">
                         <a
                             href="https://www.linkedin.com/in/huu-khang-nguyen-216355161/"
@@ -41,7 +43,7 @@ export const About = () => {
                             spy={true}
                             smooth={true}
                             offset={-100}
-                            className={`cursor-pointer inline-flex text-white bg-green-500 border-0 py-2 px-6 rounded-3xl focus:outline-none hover:bg-green-600 rounded text-lg`}
+                            className={`focus:outline-none inline-flex cursor-pointer rounded-3xl rounded border-0 bg-green-500 py-2 px-6 text-lg text-white hover:bg-green-600`}
                         >
                             {t("about.work-with-me")}
                         </Link>
@@ -51,13 +53,13 @@ export const About = () => {
                             spy={true}
                             smooth={true}
                             offset={-100}
-                            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 rounded-3xl focus:outline-none hover:bg-gray-700 hover:text-white cursor-pointer  rounded text-lg"
+                            className="focus:outline-none ml-4 inline-flex cursor-pointer rounded-3xl rounded border-0 bg-gray-800 py-2 px-6 text-lg text-gray-400  hover:bg-gray-700 hover:text-white"
                         >
                             {t("about.see-my-past-work")}
                         </Link>
                     </div>
                 </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <div className="w-5/6 md:w-1/2 lg:w-full lg:max-w-lg">
                     {/* <img
                         className="object-cover object-center rounded"
                         alt="hero"

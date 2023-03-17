@@ -44,10 +44,10 @@ export const Navbar = () => {
                             let menu = document.getElementById("menu");
                             menu.classList.toggle("hidden");
                         }}
-                        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+                        className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
                     >
                         <svg
-                            class="fill-current h-3 w-3 cursor-pointer block"
+                            className="fill-current h-3 w-3 cursor-pointer block"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -61,7 +61,7 @@ export const Navbar = () => {
                                 md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700"
                 >
                     <div
-                        class="hidden w-full block flex-grow 
+                        className="hidden w-full block flex-grow 
                         md:justify-between md:pt-0  
                         lg:flex lg:items-center lg:w-auto lg:space-x-4 "
                         id="menu"
