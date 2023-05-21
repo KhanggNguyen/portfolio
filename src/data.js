@@ -38,15 +38,17 @@ export const skills = [
   "Symfony",
   "ZEND",
   "Codeigniter",
-  "NodeJS/Express",
   "MySQL",
-  "MongoDB",
-  "HTML/CSS",
   "Javascript",
   "Typescript",
+  "NodeJS/Express",
+  "MongoDB",
+  "HTML/CSS/SCSS",
+  "Tailwind",
   "Jquery",
   "React",
   "Angular",
+  "Svelte",
   "Redis",
   "Github/Gitlab/Bitbucket",
   "SAFe"
@@ -61,7 +63,7 @@ export const experiences = [
     company: "Proxiel",
     title: "PHP Developper",
     keywords: "Zend, PHP7, MySQL, JavaScript, Jquery, Ansible, Gitlab, Jenkins, SAFe",
-    description: "I'm currently working as a PHP Developpeur at Sopra Steria."
+    description: "I'm currently working as a subcontractor full stack PHP developper at Sopra Steria."
   },
   {
     startDate: "03-01-2021",

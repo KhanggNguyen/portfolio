@@ -62,7 +62,7 @@ export const Contact = () => {
                     <div className="dark:bg-gray-900 bg-white dark:text-white relative flex flex-wrap py-6 rounded shadow-md">
                         <div className="lg:w-2/5 px-6">
                             <h2 className="title-font font-semibold tracking-widest text-xs">
-                                ADDRESS
+                                {t('contact.address').toUpperCase()}
                             </h2>
                             <p className="mt-1">Toulouse, France</p>
                         </div>
@@ -199,7 +199,7 @@ export const Contact = () => {
                         type="submit"
                         className="text-white border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg bg-green-500"
                     >
-                        Submit
+                        {t('contact.submit')}
                     </button>
                 </form>
             </div>

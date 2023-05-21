@@ -1,8 +1,8 @@
-export const transformDate = ({ date }) => {
+export const transformDate = ({ date, locale = "fr-FR" }) => {
     const _date = new Date(date);
 
-    return _date.toLocaleDateString("fr-FR", {
+    return _date.toLocaleDateString(locale, {
         year: "numeric",
-        month: "long",
+        month: "numeric",
     });
 };

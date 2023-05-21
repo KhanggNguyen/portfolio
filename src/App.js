@@ -5,7 +5,6 @@ import { Contact } from "./components/Contact";
 import { Experiences } from "./components/Experiences";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
-import { useEffect } from "react";
 import useDarkMode from "./hook/useDarkMode";
 
 export default function App() {

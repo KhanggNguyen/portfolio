@@ -29,8 +29,8 @@ const Container = ({ theme, children }) => {
 const BodyWrapper = ({ title, children }) => {
     return (
         <article className="body-wrapper">
-            <p className="title text-left font-medium m-0">{title}</p>
-            <ul className="body-inner text-left p-0 mt-5 mb-16 last:mb-0">
+            <p className="title m-0 text-left font-medium">{title}</p>
+            <ul className="body-inner mt-5 mb-16 p-0 text-left last:mb-0">
                 {children}
             </ul>
         </article>
@@ -61,30 +61,39 @@ const DescriptionText = ({ theme, text }) => {
 };
 
 const DateSection = ({ startDate, endDate, currentYear = false }) => {
+    const { t } = useTranslation();
     const d = new Date();
+    const _month = d.getMonth();
     const _year = d.getFullYear();
 
     const _currentYear = currentYear && (
-        <time dateTime={_year.toString()}>{_year}</time>
+        <time dateTime={_month.toString() + _year.toString()}>{`${(_month + 1)
+            .toString()
+            .padStart(2, "0")} ${_year}`}</time>
     );
 
     const _endDate = endDate ? (
         <>
-            <span className="text-sm mt-3 p-0">To</span>
-            <time dateTime={endDate}>{transformDate({ date: endDate })}</time>
+            <time dateTime={endDate}>
+                {transformDate({
+                    date: endDate,
+                    locale: "fr-FR",
+                }).toLowerCase()}
+            </time>
         </>
     ) : (
         <>
-            <span className="text-sm mt-3 p-0">To</span>
-            <span>Now</span>
+            <span>{t("experiences.now")}</span>
         </>
     );
 
     const _startDate = (
         <>
-            <span className="text-sm mt-3 p-0">From</span>
             <time dateTime={startDate}>
-                {transformDate({ date: startDate })}
+                {transformDate({
+                    date: startDate,
+                    locale: "fr-FR",
+                }).toLowerCase()}
             </time>
         </>
     );
@@ -93,6 +102,9 @@ const DateSection = ({ startDate, endDate, currentYear = false }) => {
         <p className="date-wrapper">
             {_currentYear}
             {_endDate}
+            <span class="pr-5">
+                <strong>|</strong>
+            </span>
             {_startDate}
         </p>
     );
@@ -102,15 +114,15 @@ export const Experiences = () => {
     const { t } = useTranslation();
 
     return (
-        <section id="experiences" className="dark:text-gray-400 body-font">
-            <div className="container px-5 py-10 mx-auto text-center lg:px-40  min-h-screen">
-                <div className="flex flex-col w-full mb-20">
-                    <BriefcaseIcon className="mx-auto inline-block w-10 mb-4" />
-                    <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 dark:text-white">
-                        {t('experiences.title')}
+        <section id="experiences" className="body-font dark:text-gray-400">
+            <div className="container mx-auto min-h-screen px-5 py-10 text-center  lg:px-40">
+                <div className="mb-20 flex w-full flex-col">
+                    <BriefcaseIcon className="mx-auto mb-4 inline-block w-10" />
+                    <h1 className="title-font mb-4 text-3xl font-medium dark:text-white sm:text-4xl">
+                        {t("experiences.title")}
                     </h1>
                 </div>
-                <div className="flex flex-wrap m-4">
+                <div className="m-4 flex flex-wrap">
                     <Timeline>
                         {experiences.map((experience) => (
                             <Container key={experience.startDate}>
@@ -121,13 +133,19 @@ export const Experiences = () => {
                                 />
                                 <BodyWrapper title={experience.title}>
                                     <Subtitle
-                                        text={`${t('experiences.location')}: ${experience.location}`}
+                                        text={`${t("experiences.location")}: ${
+                                            experience.location
+                                        }`}
                                     />
                                     <Subtitle
-                                        text={`${t('experiences.company')}: ${experience.company}`}
+                                        text={`${t("experiences.company")}: ${
+                                            experience.company
+                                        }`}
                                     />
                                     <DescriptionSubtitle
-                                        text={`${t('experiences.keywords')} : ${experience.keywords}`}
+                                        text={`${t("experiences.keywords")} : ${
+                                            experience.keywords
+                                        }`}
                                     />
                                     <Description
                                         text={experience.description}

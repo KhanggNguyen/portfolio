@@ -51,6 +51,7 @@ div.timeline-wrapper {
     max-width: 125px;
     min-width: 125px;
     text-align: end;
+    font-weight: 600;
 }
 
 .body-wrapper {

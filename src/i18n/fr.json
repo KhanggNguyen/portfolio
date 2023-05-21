@@ -5,7 +5,7 @@
         "about": "A propos",
         "experiences":"Expériences",
         "projects":"Projets",
-        "skills": "Competences",
+        "skills": "Compétences",
         "contact":"Contact"
     },
     "about": {
@@ -21,16 +21,24 @@
         "name": "Nom complet",
         "phone": "Téléphone",
         "email": "Adresse email",
-        "message": "Message"
+        "message": "Message",
+        "submit": "Envoyer",
+        "address": "Adresse"
     },
     "experiences": {
         "title": "Expériences",
         "location": "Lieu",
         "company": "Société",
-        "keywords": "Mots clés"
+        "keywords": "Mots clés",
+        "from": "de",
+        "to": "a",
+        "now": "maintenant"
     },
     "projects": {
         "title": "Projets",
-        "subtitle": "____To translate____"
+        "subtitle": "Voici les projets que j'ai pu réaliser ou participer pendant ma formation ou mon temps libre."
+    },
+    "skills":{
+        "title": "Compétences &amp; Technologies"
     }
 }
