@@ -31,6 +31,22 @@ export const projects = [
     image: "#",
     link: "https://ecommerce-34.netlify.app/",
   },
+  {
+    title: "Trello Clone Api",
+    subtitle: "Mongodb, Express, Nodejs",
+    description:
+      "This project is a clone of trello api.",
+    image: "#",
+    link: "https://github.com/KhanggNguyen/trello-clone-api.git",
+  },
+  {
+    title: "Todo api",
+    subtitle: "Laravel 9",
+    description:
+      "This project is an todo app of laravel 9",
+    image: "#",
+    link: "https://github.com/KhanggNguyen/laravel9-simple-blog-api.git",
+  }
 ];
 
 export const skills = [
