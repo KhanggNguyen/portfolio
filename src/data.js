@@ -2,6 +2,7 @@ export const projects = [
   {
     title: "Diko app",
     subtitle: "MEAN Stack",
+    translateKey: "dikoapp",
     description:
       "A simple dictionnary application which allows you to find word's information. This application uses data provided by http://www.jeuxdemots.org/jdm-accueil.php",
     image: "./diko-app.gif",
@@ -10,6 +11,7 @@ export const projects = [
   {
     title: "Simple chat app",
     subtitle: "React, Node, Socket.io",
+    translateKey: "chatapp",
     description:
       "A simple chat application which allow you to join a room and chat with other people.",
     image: "./chatapp.png",
@@ -18,6 +20,7 @@ export const projects = [
   {
     title: "FoodRecipeBlog",
     subtitle: "Symfony, Twig, Postgresql, Javascript",
+    translateKey: "foodrecipeapp",
     description:
       "A simple responsive blog allows you to create, read, update, delete an article. You can try it out using this account admin@blog.com & password: 123456.",
     image: "./foodrecipeblog.gif",
@@ -26,6 +29,7 @@ export const projects = [
   {
     title: "Personnal Ecommerce Project",
     subtitle: "MERN Stack - Mongodb, Express, Reactjs, Nodejs",
+    translateKey: "ecommerceapp",
     description:
       "This project is about a simple ecommerce site and a dashboard providing all basic ecommerce's features.",
     image: "#",
@@ -63,6 +67,7 @@ export const experiences = [
     company: "Proxiel",
     title: "PHP Developper",
     keywords: "Zend, PHP7, MySQL, JavaScript, Jquery, Ansible, Gitlab, Jenkins, SAFe",
+    translateKey: "proxiel",
     description: "I'm currently working as a subcontractor full stack PHP developper at Sopra Steria."
   },
   {
@@ -73,6 +78,7 @@ export const experiences = [
     company: "Price Observatory",
     title: "Intern",
     keywords: "Codeigniter, PHP7, MySQL, JavaScript, Jquery, Redis, Bitbucket, Redmine api, SFTP, XPath, Linux, Apache",
+    translateKey: "po",
     description: "During my internship at Price Observatory, I developed an interface which shows price changes. This interface included some options like filtering, exporting and pagination. I also improved chrome extension Price Observatory and configured crawlers to retrieve precise information on Websites."
   },
   {
@@ -83,6 +89,7 @@ export const experiences = [
     company: "Laposte Groupe",
     title: "Intern",
     keywords: "PHP, HTML/CSS, JavaScript, SQlite, Isotope JS, Datatables",
+    translateKey: "laposte",
     description:  "During this internship, I improved ergonomics of the intranet site. I created a web supervision screen for production site. This interface allows you to track the current state of mail sorting machine."
   }
   

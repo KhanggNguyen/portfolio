@@ -148,7 +148,7 @@ export const Experiences = () => {
                                         }`}
                                     />
                                     <Description
-                                        text={experience.description}
+                                        text={t(`experiences.${experience.translateKey}`)}
                                     />
                                 </BodyWrapper>
                             </Container>

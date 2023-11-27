@@ -32,11 +32,18 @@
         "keywords": "Mots clés",
         "from": "de",
         "to": "a",
-        "now": "maintenant"
+        "now": "maintenant",
+        "laposte": "Lors de monstage, j'ai amélioré le site intranet. J'ai mis en place d'une page web de supervision pour le chantier de production. Elle permet de suivre l'état de tri en temps réel.",
+        "po": "Pendant mon stage chez Price Observatory, j'ai l'occasion de travailler sur les outils de crawlers qui permettent de récupérer les information précises sur les sites internet. J'ai également mis en place une interface de suivi avancée des changement du prix. J'ai également amélioré l'extension chrome de l'entreprise.",
+        "proxiel": "Développer d'une application dans le domaine télécom."
     },
     "projects": {
         "title": "Projets",
-        "subtitle": "Voici les projets que j'ai pu réaliser ou participer pendant ma formation ou mon temps libre."
+        "subtitle": "Voici les projets que j'ai pu réaliser ou participer pendant ma formation ou mon temps libre.",
+        "chatapp": "Une simple application qui permet de communiquer avec autres personnes dans une salle nommée.",
+        "dikoapp": "Une simple application qui permet de trouver l'information d'un mot. Tous les données sont fournies via cette api http://www.jeuxdemots.org/jdm-accueil.php.",
+        "ecommerceapp": "Ceci est une simple application ecommerce qui propose toutes les fonctionalités de base d'un site de vente en ligne.",
+        "foodrecipeapp": "Un simple blog qui permet de créer, mettre à jour, lire ou supprimer un article."
     },
     "skills":{
         "title": "Compétences &amp; Technologies"

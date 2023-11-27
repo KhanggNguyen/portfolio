@@ -32,11 +32,18 @@
         "keywords": "Keywords",
         "from": "from",
         "to": "to",
-        "now": "now"
+        "now": "now",
+        "laposte": "During this internship, I improved ergonomics of the intranet site. I created a web supervision screen for production site. This interface allows you to track the current state of mail sorting machine.",
+        "po": "During my internship at Price Observatory, I developed an interface which shows price changes. This interface included some options like filtering, exporting and pagination. I also improved chrome extension Price Observatory and configured crawlers to retrieve precise information on Websites.",
+        "proxiel": "Developer an application in the telecom field."
     },
     "projects": {
         "title": "Apps I've Built",
-        "subtitle": "Here u can check out some projects that I've built or participated during my formation or my freetime."
+        "subtitle": "Here u can check out some projects that I've built or participated during my formation or my freetime.",
+        "chatapp": "A simple chat application which allow you to join a room and chat with other people.",
+        "dikoapp": "A simple dictionnary application which allows you to find word's information. This application uses data provided by http://www.jeuxdemots.org/jdm-accueil.php.",
+        "ecommerceapp": "This project is about a simple ecommerce site and a dashboard providing all basic ecommerce's features.",
+        "foodrecipeapp": "A simple responsive blog allows you to create, read, update, delete an article. You can try it out using this account admin@blog.com & password: 123456."
     },
     "skills": {
         "title": "Skills &amp; Technologies"
