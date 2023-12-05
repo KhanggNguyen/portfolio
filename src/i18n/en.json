@@ -43,7 +43,8 @@
         "chatapp": "A simple chat application which allow you to join a room and chat with other people.",
         "dikoapp": "A simple dictionnary application which allows you to find word's information. This application uses data provided by http://www.jeuxdemots.org/jdm-accueil.php.",
         "ecommerceapp": "This project is about a simple ecommerce site and a dashboard providing all basic ecommerce's features.",
-        "foodrecipeapp": "A simple responsive blog allows you to create, read, update, delete an article. You can try it out using this account admin@blog.com & password: 123456."
+        "foodrecipeapp": "A simple responsive blog allows you to create, read, update, delete an article. You can try it out using this account admin@blog.com & password: 123456.",
+        "tamtracking": "This project is about a simple interface allow you to track tam's time per stop."
     },
     "skills": {
         "title": "Skills &amp; Technologies"

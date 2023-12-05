@@ -35,6 +35,15 @@ export const projects = [
     image: "#",
     link: "https://ecommerce-34.netlify.app/",
   },
+  {
+    title: "Tam tracking",
+    subtitle: "Express, Reactjs, Nodejs",
+    translateKey: "tamtracking",
+    description:
+      "This project is about a simple interface allow you to track tam's time per stop.",
+    image: "#",
+    link: "https://mon-tam.netlify.app/",
+  },
 ];
 
 export const skills = [
