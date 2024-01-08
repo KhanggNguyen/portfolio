@@ -74,7 +74,7 @@ export const experiences = [
     currentYear: true,
     location: "Montpellier",
     company: "Proxiel",
-    title: "PHP Developper",
+    title: "fullstack-developer",
     keywords: "Zend, PHP7, MySQL, JavaScript, Jquery, Ansible, Gitlab, Jenkins, SAFe",
     translateKey: "proxiel",
     description: "I'm currently working as a subcontractor full stack PHP developper at Sopra Steria."
@@ -85,7 +85,7 @@ export const experiences = [
     currentYear: false,
     location: "Montpellier",
     company: "Price Observatory",
-    title: "Intern",
+    title: "stage-fullstack-developer",
     keywords: "Codeigniter, PHP7, MySQL, JavaScript, Jquery, Redis, Bitbucket, Redmine api, SFTP, XPath, Linux, Apache",
     translateKey: "po",
     description: "During my internship at Price Observatory, I developed an interface which shows price changes. This interface included some options like filtering, exporting and pagination. I also improved chrome extension Price Observatory and configured crawlers to retrieve precise information on Websites."
@@ -96,7 +96,7 @@ export const experiences = [
     currentYear: false,
     location: "Toulouse",
     company: "Laposte Groupe",
-    title: "Intern",
+    title: "stage-fullstack-developer",
     keywords: "PHP, HTML/CSS, JavaScript, SQlite, Isotope JS, Datatables",
     translateKey: "laposte",
     description:  "During this internship, I improved ergonomics of the intranet site. I created a web supervision screen for production site. This interface allows you to track the current state of mail sorting machine."

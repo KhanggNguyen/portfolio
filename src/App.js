@@ -8,16 +8,15 @@ import { Skills } from "./components/Skills";
 import useDarkMode from "./hook/useDarkMode";
 
 export default function App() {
-    const [colorTheme, setTheme] = useDarkMode(getDefaultTheme());
-
-    function getDefaultTheme() {
-        const selectedTheme = JSON.parse(localStorage.getItem("theme"));
-        return selectedTheme || "light";
-    }
+    const [colorTheme, setTheme] = useDarkMode();
 
     return (
         <Suspense fallback="loading">
-            <main className="font-sans text-black bg-white-300 dark:bg-gray-900 body-font">
+            <main
+                className={`bg-white-300 body-font font-sans text-black dark:bg-gray-900 ${
+                    colorTheme === "dark" ? "dark" : ""
+                }`}
+            >
                 <Navbar />
                 <About />
                 <Experiences />

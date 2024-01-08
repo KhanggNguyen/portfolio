@@ -27,6 +27,8 @@
     },
     "experiences": {
         "title": "Experiences",
+        "stage-fullstack-developer": "Intern - Fullstack developer",
+        "fullstack-developer": "Fullstack developer",
         "location": "Location",
         "company": "Company",
         "keywords": "Keywords",

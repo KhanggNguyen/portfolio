@@ -102,7 +102,7 @@ const DateSection = ({ startDate, endDate, currentYear = false }) => {
         <p className="date-wrapper">
             {_currentYear}
             {_endDate}
-            <span class="pr-5">
+            <span className="pr-5">
                 <strong>|</strong>
             </span>
             {_startDate}
@@ -131,7 +131,7 @@ export const Experiences = () => {
                                     endDate={experience.endDate}
                                     currentYear={experience.currentYear}
                                 />
-                                <BodyWrapper title={experience.title}>
+                                <BodyWrapper title={`${t(`experiences.${experience.title}`)}`}>
                                     <Subtitle
                                         text={`${t("experiences.location")}: ${
                                             experience.location
